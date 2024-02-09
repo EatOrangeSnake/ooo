@@ -1,3 +1,12 @@
+///like as DecAssign, but it will return new value and not affect self.
+///```
+/// use ooo::dec;
+/// let x: usize = 3usize;
+/// assert_eq!(x.dec(), 2usize); //return decreased value.
+/// assert_eq!(x, 3usize); //but do not affect self.
+///```
+
+
 pub trait Dec{
     fn dec(&self) -> Self;
 }

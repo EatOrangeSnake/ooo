@@ -5,8 +5,8 @@
 //!so you are not worth worrying workpiece.
 //!for exsample:
 //! ```
-//! use ode::inc::*; //use the trait that increase.
-//! use ode::ina::*; //use the trait that increase assign.
+//! use ooo::inc::*; //use the trait that increase.
+//! use ooo::ina::*; //use the trait that increase assign.
 //! let mut x: usize = 300usize; //assign "300usize" to x.
 //! assert_eq!(x, 300usize); //no problem.
 //! x.inc_assign(); //add one to x when use trait "IncAssign".
@@ -15,6 +15,8 @@
 //! assert_eq!(x, 301usize); //but you can know the variable "x" was not affected.
 //! //because "inc" method return a new increased value and not affect self, 
 //! //"inc_assign" method affect self and do not return anything.
+//! use ooo::dec::*; //use the trait that decrease.
+//! use ooo::dea::*; //use the trait that decrease assign.
 //! x.dec_assign(); //substruct one to x when use trait "DecrefAssign"
 //! assert_eq!(x, 301usize); //no ploblem.
 //! assert_eq!(x.dec(), 300usize); //Allow method "decrease" when use trait "Dec"
@@ -29,3 +31,5 @@ pub mod dec;
 pub mod pop;
 #[cfg(not(target_arch = "x86_64"))]
 pub mod push;
+pub mod mov;
+pub mod emp;

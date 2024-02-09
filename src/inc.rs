@@ -1,3 +1,12 @@
+///like as IncAssign, but do not affect self.
+///```
+/// use ooo::inc::*;
+/// let x: usize = 3usize;
+/// assert_eq!(x.inc(), 4usize); //return a increased value.
+/// assert_eq!(x, 3usize); //but do not affect self.
+///```
+
+
 pub trait Inc{
     fn inc(&self) -> Self;
 }

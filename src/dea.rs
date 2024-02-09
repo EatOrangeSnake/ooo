@@ -1,3 +1,11 @@
+///```
+/// use ooo::dea::DecAssign;
+/// let x: usize = 3usize;
+/// x.dec_assign(); //decrease self(substruct one to self).
+/// assert_eq!(x, 2usize); //because it was decreased.the x is 2 now.
+///```
+
+
 pub trait DecAssign{
     fn dec_assign(&mut self);
 }

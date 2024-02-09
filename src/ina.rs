@@ -1,3 +1,11 @@
+///```
+/// use ooo::ina::*;
+/// let x: usize = 3usize;
+/// x.inc_assign(); //increace self(add one to self)
+/// assert_eq!(x, 4usize) //x was increaced and affected;
+///```
+
+
 pub trait IncAssign{
     fn inc_assign(&mut self);
 }
