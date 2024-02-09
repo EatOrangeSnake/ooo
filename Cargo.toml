@@ -8,3 +8,6 @@ description = "The more operators for Rust. Such us 'Increase' and 'Decrease'."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[profile.dev]
+opt-level = 3
