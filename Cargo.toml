@@ -1,0 +1,10 @@
+[package]
+name = "ooo"
+version = "0.0.0"
+edition = "2021"
+liecense = "MIT"
+description = "The more operators for Rust. Such us 'Increase' and 'Decrease'."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
